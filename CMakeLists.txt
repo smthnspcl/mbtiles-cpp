@@ -4,8 +4,6 @@ project(mbtilesCpp)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        libs/vector_tile21/vector_tile.pb.cc
-        libs/vector_tile21/vector_tile.pb.h
         cppGzip/DecodeGzip.cpp
         cppGzip/DecodeGzip.h
         cppGzip/EncodeGzip.cpp
