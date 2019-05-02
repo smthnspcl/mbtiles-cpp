@@ -4,8 +4,12 @@ if [ ! -d "libs/vector_tile21" ]; then
     mkdir libs/vector_tile21
 fi
 
-mkdir vector_tile_spec
+if [ ! -d "vector_tile_spec" ]; then
+    mkdir vector_tile_spec
+fi
+
 cd vector_tile_spec
+
 if [ ! -f "vector_tile.proto" ]; then
     wget https://raw.githubusercontent.com/mapbox/vector-tile-spec/master/2.1/vector_tile.proto
 fi
