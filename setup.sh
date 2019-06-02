@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git submodule update --init --recursive --remote
+
 if [ ! -d "libs/vector_tile21" ]; then
     mkdir libs/vector_tile21
 fi
